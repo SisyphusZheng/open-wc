@@ -41,21 +41,20 @@ npx: installed 30 in 1.762s
 For more details please visit us at [open-wc.org](https://open-wc.org).
 
 ## Packages
-
+        
 | Package                                                                                     | Version                                                                                                                                       | Description                                                              |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [building-rollup](./packages/building-rollup)                                               | [![building-rollup](https://img.shields.io/npm/v/@open-wc/building-rollup.svg)](https://www.npmjs.com/package/@open-wc/building-rollup)       | Default configuration for working with rollup.                           |
+| [building-rollup](./packages/building-rollup)                                               | [![building-rollup](https://img.shields.io/npm/v/@open-wc/building-rollup.svg)](https://www.npmjs.com/package/@open-wc/building-rollup)       | Default configuration for Rollup (Vite is a modern alternative).         |
 | [create](./packages/create)                                                                 | [![create](https://img.shields.io/npm/v/@open-wc/create.svg)](https://www.npmjs.com/package/@open-wc/create)                                  | Scaffold web components following open-wc recommendations.               |
 | [demoing-storybook](./packages/demoing-storybook)                                           | [![demoing-storybook](https://img.shields.io/npm/v/@open-wc/demoing-storybook.svg)](https://www.npmjs.com/package/@open-wc/demoing-storybook) | Storybook configuration following open-wc recommendations.               |
 | [eslint-config](./packages/eslint-config)                                                   | [![eslint-config](https://img.shields.io/npm/v/@open-wc/eslint-config.svg)](https://www.npmjs.com/package/@open-wc/eslint-config)             | Eslint configuration following open-wc recommendations.                  |
-| [@web/dev-server](https://modern-web.dev/docs/dev-server/overview/)                                      | [![@web/dev-server](https://img.shields.io/npm/v/@web/dev-server.svg)](https://www.npmjs.com/package/@web/dev-server)            | Modern development server for web applications, replacing es-dev-server. |
+| [@web/dev-server](https://modern-web.dev/docs/dev-server/overview/)                         | [![@web/dev-server](https://img.shields.io/npm/v/@web/dev-server.svg)](https://www.npmjs.com/package/@web/dev-server)                         | Modern development server for web applications, replacing es-dev-server. |
 | [polyfills-loader](./packages/polyfills-loader)                                             | [![polyfills-loader](https://img.shields.io/npm/v/@open-wc/polyfills-loader.svg)](https://www.npmjs.com/package/@open-wc/polyfills-loader)    | Load web component polyfills using dynamic imports.                      |
 | [scoped-elements](./packages/scoped-elements)                                               | [![scoped-elements](https://img.shields.io/npm/v/@open-wc/scoped-elements.svg)](https://www.npmjs.com/package/@open-wc/scoped-elements)       | Auto define custom elements to scope them and avoid the name collision.  |
 | [semantic-dom-diff](./packages/semantic-dom-diff)                                           | [![semantic-dom-diff](https://img.shields.io/npm/v/@open-wc/semantic-dom-diff.svg)](https://www.npmjs.com/package/@open-wc/semantic-dom-diff) | To compare dom and shadow dom trees. Part of open-wc recommendations.    |
 | [testing](./packages/testing)                                                               | [![testing](https://img.shields.io/npm/v/@open-wc/testing.svg)](https://www.npmjs.com/package/@open-wc/testing)                               | Testing following open-wc recommendations.                               |
 | [testing-helpers](./packages/testing-helpers)                                               | [![testing-helpers](https://img.shields.io/npm/v/@open-wc/testing-helpers.svg)](https://www.npmjs.com/package/@open-wc/testing-helpers)       | Testing Helpers following open-wc recommendations.                       |
-| [testing-karma](./packages/testing-karma)                                                   | [![testing-karma](https://img.shields.io/npm/v/@open-wc/testing-karma.svg)](https://www.npmjs.com/package/@open-wc/testing-karma)             | Testing with Karma following open-wc recommendations.                    |
-| [testing-karma-bs](https://github.com/open-wc/legacy/tree/master/packages/testing-karma-bs) | [![testing-karma-bs](https://img.shields.io/npm/v/@open-wc/testing-karma-bs.svg)](https://www.npmjs.com/package/@open-wc/testing-karma-bs)    | Testing with Karma using Browserstack following open-wc recommendations. |
+| [testing-karma](./packages/testing-karma)                                                   | [![testing-karma](https://img.shields.io/npm/v/@open-wc/testing-karma.svg)](https://www.npmjs.com/package/@open-wc/testing-karma)             | Testing with Karma (legacy tool, consider Web Test Runner instead).      |
 | [testing-wallaby](./packages/testing-wallaby)                                               | [![testing-wallaby](https://img.shields.io/npm/v/@open-wc/testing-wallaby.svg)](https://www.npmjs.com/package/@open-wc/testing-wallaby)       | Testing with wallaby following open-wc recommendations.                  |
 
 ## Contact
@@ -97,9 +96,6 @@ npm run lint
 
 # local testing
 npm run test
-
-# testing via browserstack
-npm run test:bs
 
 # run commands only for a specific scope
 lerna run <command> --scope @open-wc/<package-name> --stream
